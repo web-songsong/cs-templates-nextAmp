@@ -6,7 +6,10 @@ const ServicesTitle = ({ name }: { name: string }) => (
   <>
     <style jsx>{styles}</style>
     <div className="servicesTitleWrap">
-      {name}:<Link href={'/amp-test'}>jump router amp-test page</Link>
+      {name}:
+      <Link href={'/amp-test'}>
+        <a>jump router amp-test page</a>
+      </Link>
     </div>
   </>
 )
