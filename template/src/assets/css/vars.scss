@@ -1,0 +1,26 @@
+$breakpoints: (
+        xs: 360px,
+        sm: 530px,
+        md: 1040px,
+);
+
+@mixin mq($name, $medium: null, $small: null, $xsmall: null) {
+  @if $xsmall {
+    #{$name}: $xsmall
+  }
+  @if $small {
+    @media (min-width: map-get($breakpoints, sm)) {
+      #{$name}: $small
+    }
+  }
+  @if $medium {
+    @media (min-width: map-get($breakpoints, md)) {
+      #{$name}: $medium
+    }
+  }
+  //@if $large {
+  //  @media (min-width: map-get($breakpoints, lg)) {
+  //    #{$name}: $large
+  //  }
+  //}
+}
