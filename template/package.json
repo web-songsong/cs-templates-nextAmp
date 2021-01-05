@@ -18,7 +18,7 @@
     "react-ssr-prepass": "node_modules/preact-ssr-prepass"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "css-loader": "^3.4.2",
     "express": "^4.17.1",
     "link-module-alias": "^1.2.0",
